@@ -34,7 +34,7 @@
   <p>In a SQLite database file on the computer where you run Slingshot. TikTok access and refresh tokens are encrypted in that file with a key from your own settings file. Data is sent only between your computer and the platform APIs (YouTube, Twitch, TikTok) over HTTPS.</p>
 
   <h2>Sign-in redirect page</h2>
-  <p>Because TikTok requires an HTTPS sign-in address, this website hosts a page at <code>/tiktok/callback/</code> that immediately forwards TikTok's one-time sign-in code to Slingshot on your own computer (<code>127.0.0.1</code>). The page runs entirely in your browser and stores nothing. The code is single-use, expires quickly, and cannot be used without the app's secret, which only exists on your computer. This website is hosted on GitHub Pages; GitHub's own privacy statement applies to its hosting.</p>
+  <p>Because TikTok requires an HTTPS sign-in address, this website hosts a page at <code>/tiktok/callback/</code> that immediately forwards TikTok's one-time sign-in code to Slingshot on your own computer (<code>localhost</code>). The page runs entirely in your browser and stores nothing. The code is single-use, expires quickly, and cannot be used without the app's secret, which only exists on your computer. This website is hosted on GitHub Pages; GitHub's own privacy statement applies to its hosting.</p>
 
   <h2>Retention and deletion</h2>
   <p>Data stays until you delete it. In Slingshot, <b>Disconnect TikTok</b> revokes access with TikTok and deletes the stored tokens; removing an account deletes its history. Deleting the database file deletes everything. You can also revoke access from your TikTok app's settings under security and permissions.</p>

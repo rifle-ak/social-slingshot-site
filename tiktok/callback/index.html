@@ -13,7 +13,7 @@
 <main class="doc">
   <h1>Returning to Social Slingshot…</h1>
   <p>TikTok sign-in finished. Sending you back to Slingshot running on your computer.</p>
-  <p class="muted">If nothing happens, make sure Slingshot is running, then <a id="manual" href="http://127.0.0.1:8000/">continue here</a>.</p>
+  <p class="muted">If nothing happens, make sure Slingshot is running, then <a id="manual" href="http://localhost:8000/">continue here</a>.</p>
 </main>
 <script>
   // TikTok only allows https redirect URIs, but Slingshot runs locally over http.
@@ -24,7 +24,7 @@
     var out = new URLSearchParams();
     allowed.forEach(function (k) { if (src.has(k)) out.set(k, src.get(k)); });
     if (!out.has("state")) return;
-    var target = "http://127.0.0.1:8000/connect/tiktok/callback?" + out.toString();
+    var target = "http://localhost:8000/connect/tiktok/callback?" + out.toString();
     document.getElementById("manual").href = target;
     window.location.replace(target);
   })();
