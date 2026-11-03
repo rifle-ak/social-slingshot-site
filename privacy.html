@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - Social Slingshot</title>
+  <meta name="description" content="Privacy Policy for Social Slingshot.">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="./"><img src="assets/icon.svg" alt=""> Social Slingshot</a>
+  <nav><a href="./">Home</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+</header>
+<main class="doc">
+  <h1>Privacy Policy</h1>
+  <p class="muted">Last updated: November 3, 2026</p>
+
+  <h2>Summary</h2>
+  <p>Social Slingshot runs on your own computer. The authors of Slingshot do not operate a server for it, do not receive your data, and do not use analytics, advertising or tracking. Everything Slingshot collects is stored locally in a database file that you control.</p>
+
+  <h2>Data Slingshot accesses</h2>
+  <ul>
+    <li><b>TikTok</b> (only after you click Connect TikTok and approve on TikTok's own page): your open ID, display name and username; your follower, following, like and video counts; and your videos' IDs, titles, creation times, share links and view, like, comment and share counts. Scopes requested: <code>user.info.basic</code>, <code>user.info.profile</code>, <code>user.info.stats</code>, <code>video.list</code>.</li>
+    <li><b>YouTube</b>: public channel and video statistics, read with an API key you provide.</li>
+    <li><b>Twitch</b>: public channel, stream and category information, read with application credentials you provide.</li>
+  </ul>
+
+  <h2>How it is used</h2>
+  <p>Only to show you your own analytics inside Slingshot: growth over time, best posting times, top-performing videos and similar-size creators. Slingshot does not sell, share or transfer this data, does not use it for advertising, and never posts or interacts on any platform on your behalf.</p>
+
+  <h2>Where it is stored</h2>
+  <p>In a SQLite database file on the computer where you run Slingshot. TikTok access and refresh tokens are encrypted in that file with a key from your own settings file. Data is sent only between your computer and the platform APIs (YouTube, Twitch, TikTok) over HTTPS.</p>
+
+  <h2>Sign-in redirect page</h2>
+  <p>Because TikTok requires an HTTPS sign-in address, this website hosts a page at <code>/tiktok/callback/</code> that immediately forwards TikTok's one-time sign-in code to Slingshot on your own computer (<code>127.0.0.1</code>). The page runs entirely in your browser and stores nothing. The code is single-use, expires quickly, and cannot be used without the app's secret, which only exists on your computer. This website is hosted on GitHub Pages; GitHub's own privacy statement applies to its hosting.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Data stays until you delete it. In Slingshot, <b>Disconnect TikTok</b> revokes access with TikTok and deletes the stored tokens; removing an account deletes its history. Deleting the database file deletes everything. You can also revoke access from your TikTok app's settings under security and permissions.</p>
+
+  <h2>Children</h2>
+  <p>Slingshot is not directed at children under 13 (or the minimum age required by TikTok, YouTube or Twitch in your country).</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the "Last updated" date above will change.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions: <a href="mailto:ryanmcontois@gmail.com">ryanmcontois@gmail.com</a>.</p>
+</main>
+<footer>
+  <span>© 2026 Social Slingshot</span>
+  <nav><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+</footer>
+</body></html>
