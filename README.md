@@ -1,6 +1,6 @@
 # Social Slingshot: website
 
-The public pages for [Social Slingshot](https://rifle-ak.github.io/social-slingshot-site/), a self-hosted creator analytics dashboard. They're published with GitHub Pages from the root of `main`.
+The public pages for [Social Slingshot](https://rifle-ak.is-a-better.dev/social-slingshot-site/), a self-hosted creator analytics dashboard. They're published with GitHub Pages from the root of `main`.
 
 - `index.html`: home page
 - `terms.html`, `privacy.html`: Terms of Service and Privacy Policy
